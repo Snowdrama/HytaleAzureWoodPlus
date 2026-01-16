@@ -15,7 +15,7 @@
     "HitboxType": "Stairs_Flat",
     "Gathering": {
       "Breaking": {
-        "GatherType": "Wood_Azure_Wood_Roof_Flat"
+        "GatherType": "Woods"
       }
     },
     "ParticleColor": "#bba58b",

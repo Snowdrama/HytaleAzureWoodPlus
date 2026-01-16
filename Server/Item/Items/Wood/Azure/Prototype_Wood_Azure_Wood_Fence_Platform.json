@@ -15,7 +15,7 @@
     "HitboxType": "Trapdoor_Open",
     "Gathering": {
       "Breaking": {
-        "GatherType": "Prototype_Wood_Azure_Wood_Fence_Platform"
+        "GatherType": "Woods"
       }
     },
     "ParticleColor": "#bba58b"

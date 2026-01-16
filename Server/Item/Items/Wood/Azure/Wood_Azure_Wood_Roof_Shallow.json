@@ -31,7 +31,7 @@
           },
           "Gathering": {
             "Breaking": {
-              "GatherType": "Wood_Azure_Wood_Roof_Shallow",
+              "GatherType": "Woods",
               "Quantity": 2
             }
           }
@@ -47,7 +47,7 @@
           },
           "Gathering": {
             "Breaking": {
-              "GatherType": "Wood_Azure_Wood_Roof_Shallow",
+              "GatherType": "Woods",
               "Quantity": 2
             }
           }
@@ -63,7 +63,7 @@
           },
           "Gathering": {
             "Breaking": {
-              "GatherType": "Wood_Azure_Wood_Roof_Shallow",
+              "GatherType": "Woods",
               "Quantity": 2
             }
           }
@@ -79,7 +79,7 @@
           },
           "Gathering": {
             "Breaking": {
-              "GatherType": "Wood_Azure_Wood_Roof_Shallow",
+              "GatherType": "Woods",
               "Quantity": 2
             }
           }
