@@ -1,0 +1,55 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Wood_Azure_Wood_Beam.name"
+  },
+  "Parent": "Wood_Softwood_Beam",
+  "Icon": "Icons/ItemsGenerated/Wood_Azure_Wood_Beam.png",
+  "Set": "Wood_Azure_Wood_Planks",
+  "Recipe": {
+    "Input": [
+      {
+        "ResourceTypeId": "Wood_Azure",
+        "Quantity": 1
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Builders",
+        "Type": "StructuralCrafting",
+        "Categories": [
+          "Beam"
+        ]
+      }
+    ],
+    "OutputQuantity": 2
+  },
+  "BlockType": {
+    "ParticleColor": "#bba58b",
+    "CustomModelTexture": [
+      {
+        "Texture": "Blocks/Structures/Tubes/Azure_Wood.png",
+        "Weight": 1
+      }
+    ]
+  },
+  "Tags": {
+    "Type": [
+      "Wood"
+    ],
+    "Family": [
+      "AzureWood"
+    ]
+  },
+  "IconProperties": {
+    "Scale": 0.58823,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -13.5
+    ]
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Wood_Azure_Wood_Roof_Flat.name"
+  },
+  "Icon": "Icons/ItemsGenerated/Wood_Azure_Wood_Roof_Flat.png",
+  "Set": "Wood_Azure_Wood_Planks",
+  "BlockType": {
+    "CustomModel": "Blocks/Structures/Roofs/Flat.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Blocks/Structures/Roofs/Azure_Wood.png",
+        "Weight": 1
+      }
+    ],
+    "HitboxType": "Stairs_Flat",
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Wood_Azure_Wood_Roof_Flat"
+      }
+    },
+    "ParticleColor": "#bba58b",
+    "BlockSoundSetId": "Wood"
+  },
+  "Tags": {
+    "Type": [
+      "Wood"
+    ],
+    "Family": [
+      "AzureWood"
+    ]
+  },
+  "Parent": "Wood_Softwood_Roof_Flat",
+  "Recipe": {
+    "Input": [
+      {
+        "ResourceTypeId": "Wood_Azure",
+        "Quantity": 1
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Builders",
+        "Type": "StructuralCrafting",
+        "Categories": [
+          "Roof"
+        ]
+      }
+    ],
+    "OutputQuantity": 1
+  },
+  "IconProperties": {
+    "Scale": 0.58823,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -13.5
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Wood_Azure_Wood_Ornate.name"
+  },
+  "Parent": "Wood_Lightwood_Planks",
+  "Icon": "Icons/ItemsGenerated/Wood_Azure_Wood_Ornate.png",
+  "Set": "Wood_Azure_Wood_Planks",
+  "BlockType": {
+    "Textures": [
+      {
+        "All": "BlockTextures/Wood_Azure_Wood_Ornate.png",
+        "Weight": 1
+      }
+    ]
+  },
+  "Tags": {
+    "Type": [
+      "Wood"
+    ],
+    "Family": [
+      "AzureWood"
+    ]
+  },
+  "Recipe": {
+    "Input": [
+      {
+        "ResourceTypeId": "Wood_Azure",
+        "Quantity": 1
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Builders",
+        "Type": "StructuralCrafting",
+        "Categories": [
+          "OrnatePlanks"
+        ]
+      }
+    ],
+    "OutputQuantity": 1
+  },
+  "ResourceTypes": [
+    {
+      "Id": "Wood_Azure"
+    },
+    {
+      "Id": "Wood_Planks"
+    },
+    {
+      "Id": "Fuel"
+    },
+    {
+      "Id": "Charcoal"
+    }
+  ],
+  "IconProperties": {
+    "Scale": 0.58823,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -13.5
+    ]
+  }
+}
