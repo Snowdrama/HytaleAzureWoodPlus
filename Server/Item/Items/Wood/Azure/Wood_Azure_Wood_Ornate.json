@@ -24,7 +24,7 @@
   "Recipe": {
     "Input": [
       {
-        "ResourceTypeId": "Wood_Azure",
+        "ResourceTypeId": "Wood_Azure_Trunk",
         "Quantity": 1
       }
     ],
