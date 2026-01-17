@@ -1,10 +1,39 @@
 {
   "TranslationProperties": {
-    "Name": "server.items.Wood_Azure_Trunk.name"
+    "Name": "server.items.Wood_Azure_Trunk.name",
+    "Description": "server.items.Wood_Azure_Trunk.description"
   },
-  "Parent": "Wood_Oak_Trunk",
+  "ItemLevel": 10,
   "Icon": "Icons/ItemsGenerated/Wood_Azure_Trunk.png",
+  "Categories": [
+    "Blocks.Plants"
+  ],
+  "FuelQuality": 9.0,
+  "PlayerAnimationsId": "Block",
   "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Cube",
+    "Group": "Wood",
+    "Flags": {},
+    "Gathering": {
+      "Tools": [
+        {
+          "Type": "Scraper",
+          "State": "Stripped",
+          "DropList": "Bark"
+        }
+      ],
+      "Breaking": {
+        "ItemId": "Wood_Azure_Trunk",
+        "GatherType": "Woods"
+      },
+      "Physics": {
+        "ItemId": "Wood_Azure_Trunk"
+      },
+      "UseDefaultDropWhenPlaced": true
+    },
+    "VariantRotation": "Pipe",
+    "BlockParticleSetId": "Wood",
     "Textures": [
       {
         "Sides": "BlockTextures/Wood_Trunk_Azure_Side.png",
@@ -12,13 +41,71 @@
         "Weight": 1
       }
     ],
-    "Gathering": {
-      "Breaking": {
-        "ItemId": "Wood_Azure_Trunk",
-        "GatherType": "Woods"
+    "ParticleColor": "#633625",
+    "BlockSoundSetId": "Wood",
+    "MaxSupportDistance": 5,
+    "Support": {
+      "Down": [
+        {
+          "AllowSupportPropagation": false,
+          "FaceType": "Full",
+          "Rotate": false
+        }
+      ],
+      "Horizontal": [
+        {
+          "TagId": "Type=Trunk",
+          "Rotate": false,
+          "Support": "Ignored"
+        }
+      ]
+    },
+    "State": {
+      "Definitions": {
+        "Stripped": {
+          "Textures": [
+            {
+              "Sides": "BlockTextures/Stripped_Azure_Log.png",
+              "UpDown": "BlockTextures/Stripped_Azure_Log.png",
+              "Weight": 1
+            }
+          ],
+          "Gathering": {
+            "Breaking": {
+              "GatherType": "Woods",
+              "ItemId": "Wood_Stripped_Deco"
+            }
+          },
+          "BlockEntity": {
+            "Components": {
+              "FarmingBlock": {}
+            }
+          },
+          "Farming": {
+            "Stages": {
+              "Default": [
+                {
+                  "Type": "BlockState",
+                  "State": "Stripped",
+                  "Duration": {
+                    "Min": 1000,
+                    "Max": 3000
+                  }
+                },
+                {
+                  "Type": "BlockState",
+                  "State": "default",
+                  "SoundEventId": "SFX_Wood_Hit"
+                }
+              ]
+            },
+            "StartingStageSet": "Default"
+          }
+        }
       }
     },
-    "ParticleColor": "#5e3b56"
+    "BlockBreakingDecalId": "Breaking_Decals_Wood",
+    "IgnoreSupportWhenPlaced": true
   },
   "ResourceTypes": [
     {
@@ -39,5 +126,16 @@
     {
       "Id": "Charcoal"
     }
-  ]
+  ],
+  "Tags": {
+    "Type": [
+      "Wood",
+      "Sap_Source",
+      "Trunk"
+    ],
+    "Family": [
+      "Azure"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Blocks_Wood"
 }
